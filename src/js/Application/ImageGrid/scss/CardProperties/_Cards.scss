@@ -1,0 +1,99 @@
+@at-root {
+.Dialog{
+    box-shadow: unset !important;
+    @extend %D_Screen;
+
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+        border-radius: 0px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+    }
+    >div+div{ 
+            background-color:transparent;
+            box-shadow:unset;
+            box-shadow:none;
+            scrollbar-width: none;
+            
+     }
+            .DialogInner{  
+                position: relative;
+                margin:0;
+                padding:0;
+                
+                .InnerSwipe{
+                    margin:2% 9%;
+                    width:82%;
+                    background-color: transparent;
+
+                    .CardOuter{
+                        // border : 2px solid $Dialog_Border_Color;
+                         background-color: transparent;
+                         height: auto;
+                         
+                         .Imagerow{  
+                             display: flex;
+                             flex-direction: column;
+                             flex-wrap: nowrap;
+                             justify-content: flex-start;
+                             align-items: stretch;
+                             align-content: stretch;
+                             height: auto;
+                             margin:0; 
+     
+                                 @import "./CardImage";
+                                 @import "./CardContent";
+                     
+                         }
+                         .react-swipeable-view-container{}
+                     }  
+                     @media only screen and (max-width : 576px) {
+                        margin:2% 4%;
+                        width:92%;
+                     }
+                }
+                @import "./CardBottom";
+                @import "./Counter";
+                @import "./Stepper";
+            }
+    }
+}
+
+@at-root {
+    .Dialog {
+        @media only screen and (min-width : 1200px) {
+            @each $name, $value in $Overlay-XLargeScreen{ 
+                >div+div{ #{$name}: $value; }
+                }
+        }
+        @media only screen and (min-width : 990px) and (max-width : 1200px) {
+            @each $name, $value in $Overlay-LargeScreen{ 
+                >div+div{ #{$name}: $value; }
+                }
+        }
+        @media only screen and (min-width : 768px) and (max-width : 990px) {
+            @each $name, $value in  $Overlay-MediumScreen{ 
+                >div+div{ #{$name}: $value; }
+                }
+        }
+        @media only screen and (min-width : 576px) and (max-width : 768px) {
+            @each $name, $value in  $Overlay-SmallScreen{ 
+                >div+div{ #{$name}: $value; }
+                }
+        }
+        @media only screen and (max-width : 576px) {
+            @each $name, $value in   $Overlay-xSmallScreen{ 
+                >div+div{ #{$name}: $value; }
+                }
+        }
+    }
+}

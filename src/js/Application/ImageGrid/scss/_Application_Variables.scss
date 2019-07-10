@@ -1,0 +1,89 @@
+
+/************ 
+** Application Variables
+*************/
+ 
+// The Grid
+$color_1:#00A194;
+
+$TheGridPadding:auto;
+$TheGridBGColor:$Color2; 
+
+// Grid Items Outer
+$Item_Padding:0px;
+$Item_Height:300px; 
+$Item_BorderRadius:0;
+$Item_BoxShadow:unset;
+$Item_Border:0px solid $Color1;
+
+
+// Action Bar Not Active
+$Action_BgColor:transparent;
+$Action_Color:white;
+
+// Action Bar Hover
+$Action_Active_BgColor:rgba(246,119,4,.5);
+$Action_Active_Color:$Color1;
+$Action_Active_Border_Color:$Color3;
+$Action_Active_Font_Size:1.2em;
+$Action_Active_Line_Height:1.1em;
+
+
+
+// Count Images
+$CountOffset:0;
+$countBgColor:$Color3;
+$countColor:$PrimaryHColor;
+$countTop:$CountOffset;
+$countRight:$CountOffset;
+$countBottom:unset; 
+$countLeft:unset;
+
+
+// Dialogs
+$Dialog_Screen_BG:rgba(255,255,255,.3);
+$Dialog_BG:rgba(33,51,58,.9);
+$Dialog_Border_Color:$color_1;
+
+// Create a loop as per the type
+// Cards
+    $Overlay-XLargeScreen: (
+        width : 700px, 
+        min-height : 100vh,
+        margin : 0vh auto,
+        padding:0vh 
+    );
+    $Overlay-LargeScreen: ( 
+        width : 700px,
+        min-height : 100vh,
+        margin : 0vh auto,
+        padding:0vh 
+    );
+
+    $Overlay-MediumScreen: (
+        width : 700px,
+        height : 96vh,
+        margin : .5vh auto,
+        padding:0vh 
+    );
+    $Overlay-SmallScreen: (
+        width : 600px,
+        height : 96vh,
+        margin : .5vh auto !important,
+        padding:0vh 
+    );
+    $Overlay-xSmallScreen: (
+        width : 100%,
+        height : 98vh,
+        margin : .1vh  !important,
+        padding:0vh 
+    );
+    
+// Stepper
+$StepperBgColor:transparent;
+$ActiveDot:$PrimaryHColor;
+$NonActiveDot:rgba(31, 106, 242, 0.4);
+$DotWidth:7px;
+$buttonColor:$PrimaryHColor;
+// Active Card
+$activeColor:$Color4;

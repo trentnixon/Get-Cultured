@@ -1,0 +1,38 @@
+@at-root {
+.FilterBar{
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    
+    .FilterButton{
+        border:1px solid white;
+        color: white;
+        float: right;
+    }
+}
+
+
+.CloseCard{
+    position: absolute !important;
+    top: .5%;
+    right: 7.5%;
+    z-index: 9999;
+
+    border-radius: unset !important;
+    margin: 10px;
+    background-color: #E9E9E9 !important;
+    color: black !important;
+    border-radius: 100px !important;
+    width: 25px !important;
+    height: 25px !important;
+    cursor: pointer;
+    .material-icons{  
+
+            color:$Color2;
+            font-size:.8em;
+        }
+        @media only screen and (max-width : 576px) {
+            right: 1.5%;
+         }
+}
+}

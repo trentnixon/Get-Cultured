@@ -1,0 +1,57 @@
+.CardImage{
+    height: 45vh;
+    padding:0;
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+
+.ImageOverlay{
+    
+    font-family:$FontFamilyHeader;
+    width:100%;
+    background-image: url(https://gdn-cdn.s3.amazonaws.com/embed/2019/07/get-cultured/assets/images/HeaderGradient.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+
+    h1{
+        color:$Color1;
+        font-family:$FontFamilyHeaderRegular;
+        display: table;
+        margin: 0px;
+        padding: 0 1.5rem  1.2rem;
+        position: relative;
+        font-size: 2.2em;
+        line-height: 1.1em;
+        letter-spacing:1px;
+        font-weight:100;
+        
+    }
+    h2{
+        color:$Color1;
+        font-family:$FontFamilyHeaderRegular;
+        font-size: 1.8em;
+        line-height: 1.1em;
+        margin: 0 0 10px 0;
+        margin: 0px 0 15px 20px;
+        letter-spacing:1px;
+        font-weight:100;
+    }
+    h3{
+        font-family:$FontFamilyBody;
+        color:$Color1;
+        font-size:1em;
+        margin: 0px 0 15px 20px;
+
+        small{
+            font-weight:100;
+            font-size:.8em;
+        }
+    }
+    }
+}

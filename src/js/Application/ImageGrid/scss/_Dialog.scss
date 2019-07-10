@@ -1,0 +1,61 @@
+@at-root {
+
+// Filter Dialog
+
+// inheritance
+%D_Screen{
+    background-color:$Dialog_Screen_BG;
+}
+
+%D{
+    background-color:$Dialog_BG;
+}
+
+%D_h2{ 
+    color:$color_1;
+    font-size:1.5em;
+    //line-height:$FontMedLine;
+    //font-family: $FontFamilyHeader;
+    margin:0 0 10px 0;
+    font-weight:800;
+}
+
+%D_p{
+    color:$Color2;
+    font-size:1em;
+    line-height:1.4em;
+    margin:0px 0 20px;
+    font-family: $FontFamilyBody;
+}
+
+%D_Button{
+    color:$Color2;
+    border: 1px solid $Color2;
+}
+
+%D_Form{
+    color:$Color2;   
+}
+
+.FilterDialog{
+        @extend %D_Screen;
+
+        .MuiDialog-paperWidthMd-45{  
+            width: 500px;
+            @extend %D;
+                h2{
+                    @extend %D_h2;
+                }
+
+                button{
+                    @extend %D_Button;
+                }
+
+                form{
+                    label{
+                        @extend %D_Form;
+                    }
+                }
+        }  
+    }
+}

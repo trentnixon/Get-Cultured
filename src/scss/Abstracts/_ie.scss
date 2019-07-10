@@ -1,0 +1,47 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    #Glabs #Header .FlexHeader #MainTitle{ position:  relative;}
+    #Glabs #Header .FlexHeader #MainTitle .SponserTab{ right: 0; width: unset;}
+    #Glabs #Header #BG_Image_Container #BG_Image{ background-position:  center;}
+    #Glabs .TheGrid .GridItem .ItemOuter .CardCTA a.GridItemCTA{
+        min-height: 250px;
+    }
+
+    .scroll::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    .scroll::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+    }
+    
+    .scroll::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    
+    .Dialog .DialogInner .InnerSwipe .CardOuter{
+        overflow: hidden !important;
+        .Imagerow .CardContent{ 
+            padding: .5rem 3% 0;
+            width: 94%;
+            div{
+                width: 94%;
+            }
+        }
+    } 
+    @media only screen and (min-width : 1200px) {
+        
+    }
+    @media only screen and (min-width : 576px) and (max-width : 768px) {
+        #Glabs .TheGrid .GridItem .ItemOuter .CardCTA a.GridItemCTA{
+            min-height: 170px;
+        }
+    }
+}
+
+@supports (-ms-accelerator:true) {
+    /* IE Edge 12+ CSS styles go here */ 
+  }
+ 

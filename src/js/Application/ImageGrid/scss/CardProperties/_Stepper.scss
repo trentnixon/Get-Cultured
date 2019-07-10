@@ -1,0 +1,36 @@
+.Stepper{
+    padding:0;
+    background-color: $StepperBgColor;
+    width: 100%; 
+    position: absolute;
+    bottom: 50%;
+    right: 0%;
+   
+        svg{ 
+                border:2px solid $Color2;
+                background-color:$Color2; 
+                fill:white; 
+                font-size: 40px;
+                border-radius: 100px;
+        }
+
+        @media only screen and (max-width : 568px) {
+           display: none;
+        }
+}
+
+button{
+    color: $buttonColor; 
+    z-index: 1000;
+}
+button:hover{
+    background-color: transparent;
+}
+
+div[class^="MuiMobileStepper-dot-"], div[class*=" MuiMobileStepper-dot-"]{
+    background-color:$NonActiveDot;
+    width:$DotWidth;
+}
+div[class^="MuiMobileStepper-dotActive-"], div[class*=" MuiMobileStepper-dotActive-"]{
+    background-color:$ActiveDot;
+}

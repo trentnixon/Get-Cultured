@@ -1,0 +1,53 @@
+
+                    .CardContent{
+                        position: relative;
+                        min-height: auto;
+                        height: auto;
+                        padding: .5rem 1.5rem 0;
+                        background-color: $Color1;
+                        @include FlexBoxBasic( $direction:column ,$justify:flex-start, $items:flex-start, $content:flex-start );
+   
+
+                        h1{  
+                            @extend %D_h2;
+                         
+                        }
+                        h2{  
+                            @extend %D_h2;
+                            font-size: 1.125rem; 
+                            color: $Color2;
+                            margin: 0;
+                        }
+                        p{   @extend %D_p; 
+                        strong{ font-weight:800;}
+                            a{
+                                color:$Color3;
+                                
+                            }
+                            
+                            li::before{
+                               
+                                margin:0 10px 0 -20px;
+                                padding: 0;
+                                font-weight: 800;
+                            }
+                            li:nth-child(1)::before{
+                                content: "1.";
+                                
+                            }
+                            li:nth-child(2)::before{
+                                content: "2.";
+                              
+                            }
+                            li:nth-child(3)::before{
+                                content: "3.";
+                              
+                            }
+                            li{
+                                list-style: none;
+                                padding: 0 0 0 20px;
+                                margin: 10px 0 ;
+                            }
+                        }
+
+                    }

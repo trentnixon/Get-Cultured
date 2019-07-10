@@ -1,0 +1,15 @@
+ @import "./_Application_Variables";
+
+.TheGrid{
+
+    padding:$TheGridPadding;
+    background-color: $Color4;
+    margin-bottom: 50px;
+    @include FlexBoxBasic( $wrap:wrap,$direction:row ,$justify:center,$items:center,$content:flex-start);
+   
+    @import "./_ImageGrid";
+    @import "./_Count";
+    @import "./_btns";
+}
+@import "./_Dialog";
+@import "./CardProperties/Cards"; 
